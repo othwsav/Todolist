@@ -1,38 +1,110 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap");
+.ItemsList > div:first-child {
+  display: grid;
+  grid-template-columns: 150px 330px 100px 200px;
+  background-color: #f6d55c;
+  color: #173f5f;
+}
+.ItemsList > div:first-child span {
+  padding: 20px 25px;
+  font-weight: 700;
+  font-size: 22px;
+}
+.ItemsList .item {
+  display: grid;
+  grid-template-columns: 150px 330px 100px 200px;
+  align-items: center;
+  padding: 20px 0px;
+  font-size: 18px;
+  background-color: #3caea3;
+}
+.ItemsList .item > span {
+  padding: 0 15px;
+}
+.ItemsList .item .actions {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  padding: 10px;
+}
+.ItemsList .item .actions button {
+  background-color: #f6d55c;
+  color: #173f5f;
+  font-family: inherit;
+  border: none;
+  padding: 10px 15px;
+  font-weight: 700;
+  font-size: inherit;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.ItemsList .item .actions button:hover {
+  background-color: #173f5f;
+  color: #f6d55c;
+}
+.ItemsList .noItemMessage {
+  background-color: #3caea3;
+  padding: 20px 30px;
+  font-size: 18px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 150px 430px 200px;
+}
+form button {
+  cursor: pointer;
+  background-color: #f6d55c;
+  color: #173f5f;
+  transition: all 0.4s;
+  font-weight: 700;
+}
+form button:hover {
+  background-color: #3caea3;
+  color: black;
+}
+form input, form button {
+  padding: 20px 10px;
+  font-family: inherit;
+  border: none;
+  font-size: 18px;
+  transition: all 0.4s;
+}
+form input:focus, form button:focus {
+  outline: none;
+  background-color: #3caea3;
+}
+form input:nth-child(2), form button:nth-child(2) {
+  border-right: 2px solid #173f5f;
+  border-left: 2px solid #173f5f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #173f5f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Josefin Sans";
+}
+body .App {
+  display: grid;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body .App h1 {
+  color: #f6d55c;
+}
+body .credit {
+  position: fixed;
+  bottom: 20px;
+  color: #f6d55c;
+}
+body .credit a {
+  color: #3caea3;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/*# sourceMappingURL=App.css.map */
